@@ -18,7 +18,6 @@
     "leaflet-rotatedmarker": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-leaflet-easyprint": "^2.0.0",
     "react-screen-capture": "^1.0.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
