@@ -166,19 +166,29 @@ class WorldMap extends React.Component {
     const mapContainer = this.mapContainerRef.current;
     const saveButton = document.getElementById('save-image');
     saveButton.disabled = true;
-    domtoimage.toPng(mapContainer)
+    
+    const cropWidth = mapContainer.offsetWidth;
+    const cropHeight = mapContainer.offsetHeight;
+    
+    const options = {
+      width: cropWidth,
+      height: cropHeight,
+      filter: (node) => node.id !== 'save-image'
+    };
+    
+    domtoimage.toPng(mapContainer, options)
       .then((dataUrl) => {
         const link = document.createElement('a');
         link.download = 'map.png';
         link.href = dataUrl;
         link.click();
-        saveButton.disabled = false;
       })
       .catch((error) => {
         console.error('Error while saving map as image:', error);
-        saveButton.disabled = false;
       });
+    saveButton.disabled = false;
   }
+  
 }
 
 export default WorldMap;
