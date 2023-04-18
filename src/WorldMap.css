@@ -94,8 +94,8 @@
   flex-direction: column;
   align-items: center;
   background-color: rgba(216, 216, 216, 0.8);
-  padding: 20px 10px;
-  width: 230px;
+  padding: 20px;
+  width: 250px;
   border-radius: 10px;
   border: 2px solid #000;
 }
@@ -121,20 +121,13 @@
 .legend-text {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
-/* .left div {
-  display: flex;
-  padding: 3px 0;
-  width: 100%;
-  align-items: center;
+.legend-text p {
+  white-space: nowrap;
 }
-
-.right div {
-  display: flex;
-  padding: 3.5px 0px 3.5px 25px;
-  width: 100%;
-} */
 
 .counter {
   margin-top: 10px;
@@ -177,7 +170,7 @@
   }
 
   .legend {
-    padding: 3vw 1.5vw;
+    padding: 3vw;
     width: 35vw;
   }
 
