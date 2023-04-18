@@ -10,7 +10,7 @@ Each travel status for a country has its corresponding level that adds up to you
 |      :---:       | :---: |
 | Lived There      | 5     |
 | Stayed There     | 4     |
-| Visted There     | 3     |
+| Visited There    | 3     |
 | Alighted There   | 2     |
 | Passed There     | 1     |
 | Never Been There | 0     |
