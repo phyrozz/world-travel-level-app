@@ -1,0 +1,151 @@
+:root {
+  background-color: #9dc3fb;
+}
+
+* {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+#map {
+  height: 100vh;
+  background-color: #fff;
+}
+
+.leaflet-container {
+  background-color: #9dc3fb !important;
+  height: 100%;
+}
+
+.leaflet-interactive {
+  stroke: #000;
+  stroke-width: 1;
+  fill-opacity: 1;
+}
+
+.leaflet-tooltip {
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+}
+
+.button-not-visited, .button-visited, .button-stayed, .button-lived, .button-alighted, .button-passed {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 12px 20px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button-not-visited:hover {
+  background-color: #bbbbbb;
+  color: #000;
+}
+
+.button-visited:hover {
+  background-color: #FFDD83;
+  color: #000;
+}
+
+.button-stayed:hover {
+  background-color: #FF7F3F;
+}
+
+.button-lived:hover {
+  color: #fff;
+  background-color: #E21818;
+}
+
+.button-alighted:hover {
+  color: #000;
+  background-color: #98DFD6;
+}
+
+.button-passed:hover {
+  color: #fff;
+  background-color: #00235B;
+}
+
+.level-container {
+  font-size: 14px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+  top: 12px;
+  right: 25px;
+}
+
+.level-container h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  background-color: rgba(216, 216, 216, 0.8);
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+.legend span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.left div {
+  display: flex;
+  padding: 3px 0;
+  width: 100%;
+}
+
+.right div {
+  display: flex;
+  padding: 3.5px 0px 3.5px 25px;
+  width: 100%;
+}
+
+.counter {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#save-image {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px;
+  border: 1px solid #000;
+  background-color: white;
+  border-radius: 5px;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#save-image:hover {
+  background-color: #e0e0e0;
+}
+
+#donation-btn {
+  position: fixed;
+  bottom: 18px;
+  right: 10px;
+  z-index: 1000;
+}
