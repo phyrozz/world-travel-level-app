@@ -91,33 +91,50 @@
 
 .legend {
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: rgba(216, 216, 216, 0.8);
-  padding: 12px;
+  padding: 20px 10px;
+  width: 230px;
   border-radius: 10px;
   border: 2px solid #000;
 }
 
 .legend span {
   display: inline-block;
-  width: 20px;
+  width: 25px;
   height: 20px;
   margin-right: 10px;
   border-radius: 50%;
   border: 1px solid #000;
 }
 
-.left div {
+.legend div {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.legend-text {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .left div {
   display: flex;
   padding: 3px 0;
   width: 100%;
+  align-items: center;
 }
 
 .right div {
   display: flex;
   padding: 3.5px 0px 3.5px 25px;
   width: 100%;
-}
+} */
 
 .counter {
   margin-top: 10px;
@@ -148,4 +165,28 @@
   bottom: 18px;
   right: 10px;
   z-index: 1000;
+}
+
+@media only screen and (max-width: 600px) {
+  .button-not-visited, .button-visited, .button-stayed, .button-lived, .button-alighted, .button-passed {
+    padding: 1.5vw 0;
+  }
+
+  .level-container {
+    font-size: 2vw;
+  }
+
+  .legend {
+    padding: 3vw 1.5vw;
+    width: 35vw;
+  }
+
+  .legend div {
+    height: 4vw;
+  }
+
+  .legend span {
+    width: 3vw;
+    height: 2.5vw;
+  }
 }

@@ -140,21 +140,47 @@ class WorldMap extends React.Component {
         <div className='level-container' ref={this.legendContainerRef}>
           <h1><strong>World Level </strong><span ref={this.levelCounterRef}>{this.state.levelCounter}</span></h1>
           <div className='legend'>
-            <div className='left'>
-              <div><span style={{backgroundColor: "#E21818"}}></span> Lived there</div>
-              <div><span style={{backgroundColor: "#FF7F3F"}}></span> Stayed there</div>
-              <div><span style={{backgroundColor: "#FFDD83"}}></span> Visited there</div>
-              <div><span style={{backgroundColor: "#98DFD6"}}></span> Alighted there</div>
-              <div><span style={{backgroundColor: "#00235D"}}></span> Passed there</div>
-              <div><span style={{backgroundColor: "#fff"}}></span> Never been there</div>
+            <div>
+              <span style={{backgroundColor: "#E21818"}}></span>
+              <div className='legend-text'>
+                <p>Lived there</p>
+                <p>Level: 5</p>
+              </div>
             </div>
-            <div className='right'>
-            <div>Level: 5</div>
-              <div>Level: 4</div>
-              <div>Level: 3</div>
-              <div>Level: 2</div>
-              <div>Level: 1</div>
-              <div>Level: 0</div>
+            <div>
+              <span style={{backgroundColor: "#FF7F3F"}}></span>
+              <div className='legend-text'>
+                <p>Stayed there</p>
+                <p>Level: 4</p>
+              </div>
+            </div>
+            <div>
+              <span style={{backgroundColor: "#FFDD83"}}></span>
+              <div className='legend-text'>
+                <p>Visited there</p>
+                <p>Level: 3</p>
+              </div>
+            </div>
+            <div>
+              <span style={{backgroundColor: "#98DFD6"}}></span>
+              <div className='legend-text'>
+                <p>Alighted there</p>
+                <p>Level: 2</p>
+              </div>
+            </div>
+            <div>
+              <span style={{backgroundColor: "#00235D"}}></span>
+              <div className='legend-text'>
+                <p>Passed there</p>
+                <p>Level: 1</p>
+              </div>
+            </div>
+            <div>
+              <span style={{backgroundColor: "#fff"}}></span>
+              <div className='legend-text'>
+                <p>Never been there</p>
+                <p>Level: 0</p>
+              </div>
             </div>
           </div>
         </div>
